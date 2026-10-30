@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BambooWise | Sustainable Hydration Store</title>
+
+    <meta name="description"
+          content="Discover reusable bamboo-style bottles at BambooWise. Drink better. Live greener.">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="#" class="logo">
+        <span class="logo-icon">♣</span>
+        <span>
+            BambooWise
+            <small>SUSTAINABLE HYDRATION</small>
+        </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav class="desktop-nav">
+        <a href="#shop">Shop</a>
+        <a href="#finder">Bottle finder</a>
+        <a href="#purpose">Our purpose</a>
+    </nav>
+
+    <div class="nav-actions">
+        <button id="assistantOpen" class="ai-button">✳ Ask AI</button>
+        <button id="cartOpen" class="cart-button">
+            Bag <span id="cartCount">0</span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">● SMALL CHOICES. BIGGER CHANGE.</span>
+
+            <h1>
+                Hydrate well.<br>
+                <em>Leave less behind.</em>
+            </h1>
+
+            <p>
+                Thoughtfully designed bamboo-style bottles
+                for everyday adventures. Make every refill
+                a little kinder to the planet.
+            </p>
+
+            <a href="#shop" class="primary-button">
+                Explore collection ↗
+            </a>
+
+            <span class="hero-note">
+                ✳ Reuse more. Waste less. Live consciously.
+            </span>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=85"
+                alt="Reusable water bottle">
+            <span class="nature-stamp">NATURE<br>IN YOUR<br>HANDS</span>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+
+    <section class="benefits">
+        <div>✳ <span><b>Thoughtful materials</b><small>Nature-inspired choices</small></span></div>
+        <div>↻ <span><b>Made to be reused</b><small>Less single-use plastic</small></span></div>
+        <div>♡ <span><b>Everyday friendly</b><small>Designed for your routine</small></span></div>
+        <div>⌁ <span><b>Simple living</b><small>Drink better, live greener</small></span></div>
+    </section>
+
+    <!-- SHOP -->
+
+    <section class="shop-section" id="shop">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">THE COLLECTION</span>
+                <h2>Find your everyday <em>companion.</em></h2>
+            </div>
+
+            <p>Good design, natural character, and a reason to refill.</p>
+        </div>
+
+        <div class="shop-toolbar">
+
+            <div class="filters" id="filters">
+                <button class="filter active" data-filter="all">All bottles</button>
+                <button class="filter" data-filter="classic">Classic</button>
+                <button class="filter" data-filter="insulated">Insulated</button>
+                <button class="filter" data-filter="travel">Travel</button>
+                <button class="filter" data-filter="sports">Sports</button>
+            </div>
+
+            <input
+                type="search"
+                id="productSearch"
+                placeholder="⌕ Search bottles, capacity..."
+            >
+
+            <select id="sortProducts" aria-label="Sort products">
+                <option value="default">Sort: Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+            </select>
+        </div>
+
+        <p id="resultCount" class="result-count"></p>
+
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+    <!-- BOTTLE FINDER -->
+
+    <section class="finder-section" id="finder">
+
+        <div class="finder-decoration">
+            <span>YOUR<br>PERFECT<br>REFILL</span>
+        </div>
+
+        <div class="finder-content">
+            <span class="eyebrow">A LITTLE HELP. A LOT LESS GUESSWORK.</span>
+
+            <h2>Meet your <em>bottle match.</em></h2>
+
+            <p>Tell us how you spend your day. We'll suggest a bottle that fits your routine.</p>
+
+            <form id="finderForm">
+
+                <label for="useCase">Where will you use it most?</label>
+
+                <select id="useCase">
+                    <option value="daily">Everyday / college / office</option>
+                    <option value="travel">Travel and outdoor adventures</option>
+                    <option value="workout">Gym and sports</option>
+                    <option value="desk">Study desk and home</option>
+                </select>
+
+                <label for="priority">What matters most?</label>
+
+                <select id="priority">
+                    <option value="light">Lightweight and easy to carry</option>
+                    <option value="capacity">Larger capacity</option>
+                    <option value="temperature">Insulated style</option>
+                </select>
+
+                <button class="primary-button" type="submit">
+                    Find my bottle →
+                </button>
+
+            </form>
+
+            <div id="finderResult" class="finder-result"></div>
+        </div>
+    </section>
+
+    <!-- PURPOSE -->
+
+    <section class="purpose-section" id="purpose">
+        <div>
+            <span class="eyebrow">OUR WHY</span>
+            <h2>Small habits can shape a <em>greener future.</em></h2>
+        </div>
+
+        <div>
+            <p>
+                BambooWise was inspired by a simple thought:
+                the everyday bottle we carry can be part of a
+                better choice. We make discovering reusable
+                hydration essentials feel easy, useful and personal.
+            </p>
+
+            <a href="#shop">Explore the collection →</a>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+        <span class="eyebrow">A NOTE FROM NATURE</span>
+        <h2>Make room for <em>better habits.</em></h2>
+        <p>Get occasional notes on mindful living and new arrivals.</p>
+
+        <form id="newsletterForm">
+            <input type="email" id="emailInput"
+                   placeholder="Your email address" required>
+            <button type="submit">Join us ↗</button>
+        </form>
+
+        <p id="newsletterMessage"></p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <a href="#" class="logo">
+        <span class="logo-icon">♣</span>
+        <span>BambooWise<small>SUSTAINABLE HYDRATION</small></span>
+    </a>
+
+    <p><em>Drink better. Live greener. 🌿</em></p>
+
+    <small>© 2026 BambooWise. Demo storefront — no real payments are processed.</small>
+</footer>
+
+<!-- OVERLAY -->
+
+<div id="overlay" class="overlay"></div>
+
+<!-- CART DRAWER -->
+
+<aside class="drawer" id="cartDrawer">
+    <div class="drawer-header">
+        <h2>Your Bag <span id="drawerCount">(0)</span></h2>
+        <button data-close>✕</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+        <div class="subtotal">
+            <span>Subtotal</span>
+            <strong id="subtotal">₹0</strong>
+        </div>
+
+        <button class="primary-button full-button" id="checkoutOpen">
+            Continue to checkout →
+        </button>
+
+        <small>Demo checkout. No payment is collected.</small>
+    </div>
+</aside>
+
+<!-- AI DRAWER -->
+
+<aside class="drawer" id="assistantDrawer">
+    <div class="drawer-header">
+        <h2>✳ BambooWise AI</h2>
+        <button data-close>✕</button>
+    </div>
+
+    <p class="assistant-intro">
+        Hello! 🌿 Ask me about bottles, sizes, prices or recommendations.
+    </p>
+
+    <div id="chatMessages" class="chat-messages">
+        <div class="chat-bubble bot">
+            Welcome to BambooWise! How can I help you today?
+        </div>
+    </div>
+
+    <form id="chatForm" class="chat-form">
+        <input id="chatInput" placeholder="Ask about our bottles..." required>
+        <button type="submit">Send ↗</button>
+    </form>
+</aside>
+
+<!-- CHECKOUT MODAL -->
+
+<div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-box">
+
+        <div class="drawer-header">
+            <h2>Complete your order</h2>
+            <button data-close>✕</button>
+        </div>
+
+        <form id="checkoutForm">
+
+            <label>Your full name</label>
+            <input id="customerName" required placeholder="Enter your name">
+
+            <label>Email address</label>
+            <input type="email" id="customerEmail" required placeholder="Enter your email">
+
+            <label>Delivery address</label>
+            <textarea id="customerAddress" required placeholder="Enter your address"></textarea>
+
+            <div class="subtotal">
+                <span>Order total</span>
+                <strong id="checkoutTotal">₹0</strong>
+            </div>
+
+            <button class="primary-button full-button" type="submit">
+                Place demo order →
+            </button>
+        </form>
+
+        <div id="orderSuccess" hidden></div>
+
+    </div>
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
